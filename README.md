@@ -60,10 +60,12 @@ sudo ./phc2sys -w -m -s ens2f0 -R 8 -f configs/benetel_e810.cfg
 
 sudo ./ptp4l -f ./configs/benetel_e810.cfg -2 -i enp24s0f0 -m
 sudo ./phc2sys -f ./configs/benetel_e810.cfg -s enp24s0f0 -w -m -R 8
+```
 
 ## O-RU(Commercial Radios)
 
 **Build Command**
+
 ```shell
 ./build_oai --gNB --ninja -t oran_fhlib_5g --cmake-opt -Dxran_LOCATION=$HOME/phy/fhi_lib/lib
 ```
